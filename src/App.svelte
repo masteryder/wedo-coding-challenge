@@ -1,6 +1,6 @@
 <script lang="ts">
   import Tailwind from "./components/0-quarks/Tailwind.svelte";
-	let name: String = "João";
+	export let name: String;
 </script>
 
 <Tailwind />
