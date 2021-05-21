@@ -1,4 +1,4 @@
-# A Svelte and Tailwind TypeScript template for your projects
+# Wedo Coding Challenge  - Meeting Cost Calculator
 
 ## Get started
 
@@ -12,6 +12,12 @@ npm install
 
 ```bash
 npm run dev
+```
+
+or simply build and test a version of the project with:
+
+```bash
+npm start
 ```
 
 Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
@@ -28,7 +34,7 @@ To create an optimised version of the app:
 npm run build
 ```
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+You can run the newly built app with `npm run start:no-build`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
 
 
 ## Single-page app mode
@@ -86,3 +92,50 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+
+
+## Description of the exercise
+
+### Take-home exercise
+
+Hey Front End developer. Welcome. Your mission, should you choose to accept it, is to create a
+tool to calculate the cost of a meeting for a whole year. You have 2h30 to create a single page
+app (SPA) following the instructions defined below. If you can finish faster — great! If not, limit
+yourself and don't spend much longer than 2h30.
+
+### Project - Meeting cost Calculator
+We would like you to build a web app that calculates the estimated cost of a meeting. Many
+businesses spend way too much time in meetings.
+
+The user should be able to calculate the cost of one meeting by inputting the average annual
+salary of participants, the number of participants, the duration of the meeting and it’s frequency
+(weekly, monthly, …).
+
+This project is pretty open ended in order to leave you some freedom and creativity for your
+implementation depending on the time you have available.
+You can pick a couple of optional improvements if the timing allows it. The following are just
+some ideas, so if none of these interest you, feel free to do something that isn’t on this list:
+* Add advanced options so the user can choose the number of working weeks or time to
+prepare and distribute the meeting agenda/minutes :x:
+* Make it responsive so it works on desktop, tablet and mobile devices :x:
+* Add a nice graph showing that the user could save 30% by using WEDO :x:
+* Add the option to calculate the global costs of meetings in the company (instead of only
+for one meeting) :x:
+* Instead of average annual salary, the user could input the salary for each participants :x:
+* Add some unit tests. :x:
+
+### Project Structure
+If your framework of choice is React, you can get started with this project by using create-reactapp. If you'd prefer to use something other than React (Angular/VueJS/Svelte) or you'd prefer a
+different project structure, go ahead with what you are comfortable with.
+
+### Evaluation
+The app should run on any computer by running npm install and npm start. We’ll evaluate
+the exercise by looking at the end result and the code. You will have the opportunity to present
+us your project and explain your decisions.
+
+
+### Coding at WEDO
+
+At WEDO we strive for writing simple, maintainable and clean code. We prefer simplicity over
+complexity. We commit often. We love our users and we really care about providing a good user
+experience and pleasant UI. We encourage out of the box thinking and we love to be impressed!
