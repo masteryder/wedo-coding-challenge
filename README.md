@@ -116,13 +116,13 @@ implementation depending on the time you have available.
 You can pick a couple of optional improvements if the timing allows it. The following are just
 some ideas, so if none of these interest you, feel free to do something that isn’t on this list:
 * Add advanced options so the user can choose the number of working weeks or time to
-prepare and distribute the meeting agenda/minutes :x:
-* Make it responsive so it works on desktop, tablet and mobile devices :x:
-* Add a nice graph showing that the user could save 30% by using WEDO :x:
+prepare and distribute the meeting agenda/minutes
+* Make it responsive so it works on desktop, tablet and mobile devices
+* Add a nice graph showing that the user could save 30% by using WEDO
 * Add the option to calculate the global costs of meetings in the company (instead of only
-for one meeting) :x:
-* Instead of average annual salary, the user could input the salary for each participants :x:
-* Add some unit tests. :x:
+for one meeting)
+* Instead of average annual salary, the user could input the salary for each participants
+* Add some unit tests.
 
 ### Project Structure
 If your framework of choice is React, you can get started with this project by using create-reactapp. If you'd prefer to use something other than React (Angular/VueJS/Svelte) or you'd prefer a
