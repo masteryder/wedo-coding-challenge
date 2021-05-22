@@ -21,3 +21,7 @@ export function simpleCalculateCost(
 
   return cost;
 }
+
+export function calculateSavings(cost: number): number{
+  return -1;
+}
