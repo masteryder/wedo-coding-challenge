@@ -42,7 +42,7 @@
 </script>
 
 <Tailwind />
-<h1 class="text-blue-600 text-center mt-2 mb-1 xl:text-7xl lg:text-5xl md:text-3xl text-2xl">How much you're spending on meetings</h1>
+<h1 class="text-blue-600 text-center mt-2 mb-1 xl:text-7xl lg:text-5xl md:text-3xl text-2xl">How much you're spending on a meeting</h1>
 <main>
 	<h2 class="text-gray-500 text-center text-lg mb-4">
 		And how much 💰 you could be saving!
@@ -51,7 +51,7 @@
 	<div class="flex justify-center mb-6">
 		<label class="block mr-2">
 			<input type="radio" bind:group={mode} value={Modes.SIMPLE}>
-				Basic calculator
+			Basic calculator
 		</label>
 		<label>
 			<input type="radio" bind:group={mode} value={Modes.PRO}>
@@ -59,7 +59,9 @@
 		</label>
 	</div>
 
+
 	{#if mode == Modes.SIMPLE}
+		<p class="mb-3 font-bold">What does your meeting look like?</p>
 		<div out:fade="{{ duration: 300}}" in:fly={{x:200, duration: 300, delay: 300}}>
 			<Input
 				name="average-salary"
@@ -110,14 +112,14 @@
 			</div>
 			{#if !isNaN(total) && Math.floor(savings) > 0}
 				<div>
-					<p class="text-center">😅 You are currently spending <b class="text-red-600">{total.toFixed(2)} CHF</b> on meetings in a year</p>
+					<p class="text-center">😅 You are currently spending <b class="text-red-600">{total.toFixed(2)} CHF</b> on this meeting in a year</p>
 					<p class="text-center text-2xl">👌 You could be saving <b class="text-green-600">{savings.toFixed(2)} CHF</b> just by using <a href="https://wedo.swiss"><img class="inline w-20" src="assets/images/logo-wedo.png" alt="Wedo"/></a></p>
 				</div>
 			{/if}
 		</div>
 	{:else if mode == Modes.PRO}
 			<div out:fade="{{ duration: 300}}" in:fly={{x:200, duration: 300, delay: 300}}>
-				PRO
+				Coming soon<sup>TM</sup>
 			</div>
 	{/if}
 
