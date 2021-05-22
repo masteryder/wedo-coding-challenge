@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
-    "dev": "rollup -c -w",
+    "dev": "concurrently --kill-others \"rollup -c -w\" \"sirv public --single --dev\"",
     "start": "rollup -c && sirv public --no-clear",
-    "start:no-build": "sirv public --no-clear",
     "test": "jest",
     "validate": "svelte-check"
   },
@@ -21,6 +20,7 @@
     "@types/jest": "^26.0.23",
     "autoprefixer": "^10.2.5",
     "babel-jest": "^26.6.3",
+    "concurrently": "^6.1.0",
     "jest": "^26.6.3",
     "postcss": "^8.2.8",
     "rollup": "^2.3.4",
