@@ -61,8 +61,8 @@
 
 
 	{#if mode == Modes.SIMPLE}
-		<p class="mb-3 font-bold">What does your meeting look like?</p>
 		<div out:fade="{{ duration: 300}}" in:fly={{x:200, duration: 300, delay: 300}}>
+			<p class="mb-3 font-bold">What does your meeting look like?</p>
 			<Input
 				name="average-salary"
 				label="Average annual salary of participants"
