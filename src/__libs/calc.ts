@@ -23,5 +23,5 @@ export function simpleCalculateCost(
 }
 
 export function calculateSavings(cost: number): number{
-  return -1;
+  return cost * .3;
 }
