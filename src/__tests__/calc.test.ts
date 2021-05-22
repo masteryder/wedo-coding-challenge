@@ -1,10 +1,24 @@
-import { add } from "../calc";
+import { frequencyConfig } from "../__config/frequency.config";
+import { simpleCalculateCost } from "../__libs/calc";
 
-describe("test add function", () => {
-  it("should return 3 for add(1,2)", () => {
-    expect(add(1, 2)).toBe(3);
+describe("test simple calculate function", () => {
+  it("should return 0 for simpleCalculateCost(0, 1, 1, 1)", () => {
+    expect(simpleCalculateCost(0, 1, 1, 1)).toBe(0);
   });
-it("should return 0 for add(999,-999)", () => {
-    expect(add(999, -999)).toBe(0);
+
+  it("should return 0 for simpleCalculateCost(1, 0, 1, 1)", () => {
+    expect(simpleCalculateCost(1, 0, 1, 1)).toBe(0);
+  });
+
+  it("should return 0 for simpleCalculateCost(1, 1, 0, 1)", () => {
+    expect(simpleCalculateCost(1, 1, 0, 1)).toBe(0);
+  });
+
+  it("should return 0 for simpleCalculateCost(1, 1, 1, 0)", () => {
+    expect(simpleCalculateCost(1, 1, 1, 0)).toBe(0);
+  });
+
+  it("should return 100'000 for simpleCalculateCost(1, 100000, "+frequencyConfig.dailyHours+", "+frequencyConfig.daily+")", () => {
+    expect(simpleCalculateCost(1, 100000, frequencyConfig.dailyHours, frequencyConfig.daily)).toBe(100000);
   });
 });
