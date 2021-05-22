@@ -15,7 +15,7 @@
   };
 </script>
 
-<div>
+<div class="mb-5">
   <label for="{name}" class="block text-sm font-medium text-gray-700">{label}</label>
   <div class="mt-1 relative rounded-md shadow-sm">
     {#if icon != null}
